@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>CSGOAce.gg – Provably Fair CS2 Case Openings | Free Case on Launch</title>
+  <meta name="description" content="CSGOAce.gg is launching soon. Provably fair CS2 case openings with real skins. Sign up now to receive an exclusive free case on launch.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="googlebot" content="index, follow">
+
+  <link rel="canonical" href="https://csgoace.gg/">
+  <link rel="alternate" hreflang="en" href="https://csgoace.gg/">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/manifest.webmanifest">
+
+  <meta name="theme-color" content="#0b0b12">
+  <meta name="color-scheme" content="dark light">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="CSGOAce.gg">
+  <meta property="og:title" content="CSGOAce.gg – Provably Fair CS2 Case Openings">
+  <meta property="og:description" content="Provably fair CS2 case openings with real skins. Free case on launch.">
+  <meta property="og:url" content="https://csgoace.gg/">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="CSGOAce.gg – Provably Fair CS2 Case Openings">
+  <meta name="twitter:description" content="Provably fair CS2 case openings with real skins. Free case on launch.">
+  <link rel="stylesheet" href="/index.css">
+
+  <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "464d8756ee2f40658534ca0e7fbdfb42"}'></script><!-- End Cloudflare Web Analytics -->
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "CSGOAce.gg",
+    "url": "https://csgoace.gg",
+    "publisher": {
+      "@type": "Organization",
+      "name": "CSGOAce.gg",
+      "url": "https://csgoace.gg"
+    }
+  }
+  </script>
+
+  <style>
+    body { font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif; margin: 0; padding: 0; line-height: 1.6; }
+    main { max-width: 720px; padding: 24px; margin: auto; }
+    header, footer { text-align: center; padding: 16px; }
+    h1, h2 { line-height: 1.25; }
+    .hidden { display: none; }
+    form { margin-top: 16px; }
+    input, button { font-size: 1rem; padding: 10px; }
+    button { cursor: pointer; }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>CSGOAce.gg – Provably Fair CS2 Case Openings</h1>
+  </header>
+
+  <main>
+    <section>
+      <p>
+        <strong>CSGOAce.gg</strong> is a next-generation CS2 case opening platform
+        built around transparency, provably fair odds, and real skins.
+      </p>
+
+      <p>
+        We’re launching soon. Sign up to receive an
+        <strong>exclusive free case</strong> on launch day.
+      </p>
+    </section>
+
+    <section>
+      <h2>Get a Free Case on Launch</h2>
+
+      <form id="email-form" action="https://formspree.io/f/maqbydok" method="POST">
+        <label for="email">Email address</label><br>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email">
+        <input type="text" name="_gotcha" style="display:none">
+        <button type="submit">Notify Me</button>
+        <p>No spam. Unsubscribe anytime.</p>
+      </form>
+
+      <p id="thank-you" class="hidden">
+        Thanks! You’re on the list and will receive a free case on launch.
+      </p>
+    </section>
+
+    <section>
+      <h2>Learn More About CSGOAce</h2>
+      <ul>
+        <li><a href="/articles/how-provably-fair-works">How Provably Fair CS2 Case Openings Work</a></li>
+        <li><a href="/articles/best-csgo-case-opening-sites">Best CS:GO Case Opening Sites</a></li>
+        <li><a href="/articles/is-csgo-case-opening-safe">Is CS:GO Case Opening Safe?</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 CSGOAce.gg</p>
+  </footer>
+
+  <script>
+    const form = document.getElementById("email-form");
+    const thankYou = document.getElementById("thank-you");
+
+    form.addEventListener("submit", async function (e) {
+      e.preventDefault();
+      const formData = new FormData(form);
+      const response = await fetch(form.action, {
+        method: form.method,
+        body: formData,
+        headers: { "Accept": "application/json" }
+      });
+      if (response.ok) {
+        form.classList.add("hidden");
+        thankYou.classList.remove("hidden");
+      }
+    });
+  </script>
+</body>
+</html>

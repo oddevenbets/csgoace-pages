@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://csgoace.gg/</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://csgoace.gg/articles/how-provably-fair-works</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://csgoace.gg/articles/best-csgo-case-opening-sites</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://csgoace.gg/articles/is-csgo-case-opening-safe</loc>
+    <priority>0.9</priority>
+  </url>
+
+</urlset>

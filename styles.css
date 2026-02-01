@@ -1,0 +1,87 @@
+/* ---------- Base ---------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* ---------- Colors ---------- */
+:root {
+  --bg: #08032f;
+  --text: #eaeaf0;
+  --heading: #ffffff;
+  --accent: #7247ff;
+  --max-width: 760px;
+}
+
+/* ---------- Body ---------- */
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+               Roboto, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--text);
+  background-color: var(--bg);
+}
+
+/* ---------- Layout ---------- */
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 24px;
+}
+
+/* ---------- Headings ---------- */
+h1,
+h2 {
+  color: var(--heading);
+  line-height: 1.25;
+  margin-bottom: 0.6em;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin-top: 1.6em;
+}
+
+/* ---------- Text ---------- */
+p {
+  margin: 0 0 1.2em;
+}
+
+strong {
+  font-weight: 600;
+  color: var(--heading);
+}
+
+/* ---------- Lists ---------- */
+ul {
+  padding-left: 1.4em;
+  margin: 0 0 1.2em;
+}
+
+li {
+  margin-bottom: 0.4em;
+}
+
+/* ---------- Links ---------- */
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  margin-top: 2.5em;
+  text-align: center;
+}

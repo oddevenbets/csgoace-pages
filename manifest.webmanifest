@@ -1,0 +1,13 @@
+{
+  "name": "CSGOAce.gg",
+  "short_name": "CSGOAce",
+  "description": "Provably fair CS2 case openings with real skins. Free case on launch.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#08032f",
+  "theme_color": "#7247ff",
+  "categories": ["games", "entertainment"],
+  "lang": "en-US"
+}

@@ -643,5 +643,9 @@ body.light .footer-legal {
   opacity: 0.7;
 }
 
+.article-meta strong { color: var(--accent); }
+
+
+
 
 

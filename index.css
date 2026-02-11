@@ -494,3 +494,24 @@ body {
   transform: translateY(-1px);
   color: #ffffff;
 }
+
+/* ================================
+   LARGE SCREENS (DESKTOP / ULTRAWIDE)
+================================ */
+@media (min-width: 1200px) {
+  .lower-content {
+    max-width: 1200px;           /* contain the layout */
+    margin: 0 auto;              /* center the whole block */
+    grid-template-columns: 0.9fr 1.1fr; /* bias toward spinner */
+    gap: 56px;                   /* tighter spacing */
+  }
+
+  .left-panel {
+    justify-self: end;           /* push CTA toward spinner */
+  }
+
+  .right-panel {
+    justify-self: start;
+  }
+}
+

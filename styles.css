@@ -85,3 +85,563 @@ footer {
   margin-top: 2.5em;
   text-align: center;
 }
+
+
+
+
+/* -------- NEW CODE ----------*/
+/* =========================
+   BASE
+========================= */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #08032f;
+  --bg-soft: #0e083d;
+  --text: #eaeaf0;
+  --heading: #ffffff;
+  --accent: #7247ff;
+  --border: rgba(255,255,255,0.08);
+  --article-width: 760px;
+}
+
+/* =========================
+   BODY
+========================= */
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--text);
+  background-color: var(--bg);
+}
+
+/* =========================
+   HEADER
+========================= */
+.site-header {
+  background: var(--bg-soft);
+  border-bottom: 1px solid var(--border);
+}
+
+.header-inner {
+  max-width: var(--article-width);
+  margin: 0 auto;
+  padding: 14px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.logo img {
+  height: 34px;
+  display: block;
+}
+
+.blog-active {
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.header-right {
+  font-size: 0.85rem;
+  opacity: 0.9;
+  white-space: nowrap;
+}
+
+/* =========================
+   ARTICLE LAYOUT
+========================= */
+.article-layout {
+  max-width: var(--article-width);
+  margin: 0 auto;
+  padding: 48px 0;
+}
+
+.article {
+  width: 100%;
+}
+
+/* =========================
+   BREADCRUMB
+========================= */
+.breadcrumb {
+  font-size: 0.85rem;
+  margin-bottom: 16px;
+  opacity: 0.7;
+}
+
+.breadcrumb a {
+  color: var(--accent);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.breadcrumb span {
+  margin: 0 6px;
+}
+
+/* =========================
+   HEADINGS & TEXT
+========================= */
+h1,
+h2,
+h3 {
+  color: var(--heading);
+  line-height: 1.25;
+}
+
+h1 {
+  font-size: 2.4rem;
+  margin-bottom: 12px;
+}
+
+h2 {
+  font-size: 1.45rem;
+  margin-top: 2.2em;
+}
+
+p {
+  margin: 0 0 1.2em;
+}
+
+.article-meta {
+  font-size: 0.9rem;
+  opacity: 0.7;
+  margin-bottom: 28px;
+}
+
+/* =========================
+   IMAGE
+========================= */
+.article-image {
+  margin: 40px 0;
+}
+
+.image-frame {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 14px;
+  background: #0b0636;
+}
+
+.image-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.image-caption {
+  margin-top: 10px;
+  font-size: 0.85rem;
+  opacity: 0.6;
+}
+
+/* =========================
+   MORE ARTICLES
+========================= */
+.more-articles {
+  margin-top: 72px;
+  padding-top: 32px;
+  border-top: 1px solid var(--border);
+}
+
+.more-articles h2 {
+  margin-top: 0;
+}
+
+.article-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 16px;
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: rgba(114,71,255,0.06);
+  text-decoration: none;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.article-link i.fa-file-lines {
+  color: var(--accent); /* ONLY this icon is purple */
+  font-size: 1rem;
+}
+
+.article-link span {
+  font-weight: 600;
+  color: var(--heading);
+}
+
+.article-link:hover {
+  background: rgba(114,71,255,0.12);
+  border-color: rgba(114,71,255,0.5);
+}
+
+/* =========================
+   EXCLUSIVE CTA
+========================= */
+.exclusive-cta {
+  margin-top: 80px;
+  padding: 32px 28px;
+  border-radius: 14px;
+  background: linear-gradient(
+    135deg,
+    rgba(114,71,255,0.18),
+    rgba(114,71,255,0.06)
+  );
+  border: 1px solid var(--border);
+}
+
+.exclusive-subtext {
+  font-size: 0.95rem;
+  opacity: 0.85;
+}
+
+.no-spam {
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+
+/* =========================
+   HORIZONTAL FOOTER
+========================= */
+.site-footer {
+  margin-top: 80px;
+  border-top: 1px solid var(--border);
+  background: rgba(0,0,0,0.15);
+}
+
+.footer-horizontal {
+  max-width: var(--article-width);
+  margin: 0 auto;
+  padding: 18px 0;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  font-size: 0.8rem;
+  opacity: 0.75;
+  flex-wrap: wrap;
+}
+
+/* Brand */
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap;
+}
+
+.footer-brand img {
+  height: 18px;
+  opacity: 0.85;
+}
+
+/* Description */
+.footer-desc {
+  white-space: nowrap;
+}
+
+/* Links */
+.footer-links {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  white-space: nowrap;
+}
+
+.footer-links a {
+  color: var(--text);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  opacity: 0.85;
+}
+
+/* Instagram hover only */
+.footer-links a:hover {
+  color: var(--accent);
+  opacity: 1;
+}
+
+/* Legal + Crypto */
+.footer-legal {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  white-space: nowrap;
+}
+
+/* Bitcoin icon stays default */
+.footer-legal i {
+  margin-left: 4px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 900px) {
+  .footer-horizontal {
+    justify-content: center;
+    row-gap: 10px;
+  }
+}
+
+@media (max-width: 820px) {
+  .article-layout,
+  .header-inner,
+  .footer-horizontal {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+/* =========================
+   THANK YOU / EXCLUSIVE CTA
+========================= */
+.exclusive-cta {
+  margin-top: 88px;
+  padding: 36px 32px;
+  border-radius: 14px;
+  background: linear-gradient(
+    135deg,
+    rgba(114,71,255,0.18),
+    rgba(114,71,255,0.05)
+  );
+  border: 1px solid var(--border);
+}
+
+.exclusive-cta h2 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 1.4rem;
+}
+
+.exclusive-text {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.exclusive-subtext {
+  font-size: 0.95rem;
+  opacity: 0.85;
+  margin-bottom: 22px;
+}
+
+.no-spam {
+  display: inline-block;
+  margin-top: 6px;
+  font-size: 0.8rem;
+  opacity: 0.65;
+}
+
+/* =========================
+   FORM
+========================= */
+#exclusive-form {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+#exclusive-form input[type="email"] {
+  flex: 1;
+  min-width: 240px;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: rgba(0,0,0,0.25);
+  color: var(--text);
+  font-size: 0.95rem;
+}
+
+#exclusive-form input::placeholder {
+  color: rgba(255,255,255,0.45);
+}
+
+#exclusive-form button {
+  padding: 12px 22px;
+  border-radius: 8px;
+  border: none;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+#exclusive-form button:hover {
+  filter: brightness(1.06);
+}
+
+/* =========================
+   SUCCESS STATE
+========================= */
+.exclusive-success {
+  margin-top: 16px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #a6ffcb;
+}
+
+/* Utility */
+.hidden {
+  display: none;
+}
+
+/* =========================
+   LIGHT MODE OVERRIDES
+========================= */
+body.light {
+  background: #ffffff;
+  color: #000000;
+}
+
+/* Headings */
+body.light h1,
+body.light h2,
+body.light h3 {
+  color: #000000;
+}
+
+/* Header */
+body.light .site-header {
+  background: #ffffff;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+body.light .blog-active {
+  color: var(--accent);
+}
+
+/* Breadcrumb */
+body.light .breadcrumb {
+  opacity: 0.8;
+}
+
+body.light .breadcrumb a {
+  color: var(--accent);
+}
+
+/* Article text */
+body.light p,
+body.light .article-meta {
+  color: #000000;
+  opacity: 0.9;
+}
+
+/* Image frame */
+body.light .image-frame {
+  background: #f2f2f2;
+}
+
+/* =========================
+   CARDS / LINKS
+========================= */
+body.light .article-link {
+  background: #f8f8fb;
+  border: 1px solid rgba(0,0,0,0.08);
+}
+
+body.light .article-link:hover {
+  background: #f1f1fa;
+  border-color: rgba(114,71,255,0.4);
+}
+
+body.light .article-link span {
+  color: #000000;
+}
+
+/* =========================
+   EXCLUSIVE CTA
+========================= */
+body.light .exclusive-cta {
+  background: linear-gradient(
+    135deg,
+    rgba(114,71,255,0.12),
+    rgba(114,71,255,0.04)
+  );
+  border: 1px solid rgba(0,0,0,0.08);
+}
+
+body.light .exclusive-subtext,
+body.light .no-spam {
+  color: #000000;
+  opacity: 0.75;
+}
+
+/* =========================
+   FORM (LIGHT)
+========================= */
+body.light #exclusive-form input[type="email"] {
+  background: #ffffff;
+  color: #000000;
+  border: 1px solid rgba(0,0,0,0.15);
+}
+
+body.light #exclusive-form input::placeholder {
+  color: rgba(0,0,0,0.45);
+}
+
+body.light #exclusive-form button {
+  background: var(--accent);
+  color: #ffffff;
+}
+
+body.light #exclusive-form button:hover {
+  filter: brightness(1.05);
+}
+
+/* Success */
+body.light .exclusive-success {
+  color: #0a7f45;
+}
+
+/* =========================
+   FOOTER (LIGHT)
+========================= */
+body.light .site-footer {
+  background: #fafafa;
+  border-top: 1px solid rgba(0,0,0,0.08);
+}
+
+body.light .footer-horizontal {
+  opacity: 0.85;
+}
+
+body.light .footer-links a {
+  color: #000000;
+}
+
+body.light .footer-links a:hover {
+  color: var(--accent);
+}
+
+body.light .footer-legal {
+  color: #000000;
+  opacity: 0.7;
+}
+
+
+

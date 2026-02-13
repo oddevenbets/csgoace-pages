@@ -515,3 +515,53 @@ body {
   }
 }
 
+/* ================================
+   FOOTER NAV (ABOUT / CONTACT)
+================================ */
+.footer-links {
+  margin-top: 40px;
+  padding-top: 28px;
+  border-top: 1px solid rgba(114, 71, 255, 0.25);
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+/* Remove the | separator visually */
+.footer-sep {
+  display: none;
+}
+
+/* Button-style links */
+.footer-links a {
+  display: inline-block;
+  padding: 10px 22px;
+
+  background: rgba(114, 71, 255, 0.12);
+  border: 1px solid rgba(114, 71, 255, 0.35);
+  border-radius: 999px;
+
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 600;
+
+  color: #d6d4ff;
+  text-decoration: none;
+
+  transition:
+    background 180ms ease,
+    border-color 180ms ease,
+    transform 140ms ease,
+    color 140ms ease;
+}
+
+.footer-links a:hover {
+  background: #7247FF;
+  border-color: #7247FF;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+

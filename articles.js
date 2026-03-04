@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const countdownEl = document.getElementById("countdown-text");
 
   // March 1, 2026 (local time)
-  const launchDate = new Date(2026, 2, 1, 0, 0, 0);
+  const launchDate = new Date(2026, 3, 14, 0, 0, 0);
 
   function updateCountdown() {
     const now = new Date();

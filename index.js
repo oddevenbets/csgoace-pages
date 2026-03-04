@@ -1,7 +1,7 @@
 /* ================================
    COUNTDOWN (LOGIC ONLY)
 ================================ */
-const targetDate = new Date(2026, 2, 1);
+const targetDate = new Date(2026, 3, 14);
 
 const daysEl = document.querySelector(".countdown-clean span:nth-child(1)");
 const hoursEl = document.querySelector(".countdown-clean span:nth-child(3)");
